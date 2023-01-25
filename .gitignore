@@ -108,3 +108,5 @@ dist
 
 #output
 build
+# yarn lock
+yarn.lock
