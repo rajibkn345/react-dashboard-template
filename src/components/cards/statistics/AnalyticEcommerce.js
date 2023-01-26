@@ -1,54 +1,35 @@
 import PropTypes from 'prop-types';
 
 // material-ui
-import { Box, Chip, Grid, Stack, Typography } from '@mui/material';
+import { Box, Grid, Stack, Typography } from '@mui/material';
 
 // project import
 import MainCard from 'components/MainCard';
 
 // assets
-import { RiseOutlined, FallOutlined } from '@ant-design/icons';
 
 // ==============================|| STATISTICS - ECOMMERCE CARD  ||============================== //
 
 const AnalyticEcommerce = ({ color, title, count, percentage, isLoss, extra }) => (
     <MainCard contentSX={{ p: 2.25 }}>
         <Stack spacing={0.5}>
-            <Typography variant="h6" color="textSecondary">
-                {title}
-            </Typography>
             <Grid container alignItems="center">
-                <Grid item>
-                    <Typography variant="h4" color="inherit">
-                        {count}
-                    </Typography>
-                </Grid>
-                {percentage && (
-                    <Grid item>
-                        <Chip
-                            variant="combined"
-                            color={color}
-                            icon={
-                                <>
-                                    {!isLoss && <RiseOutlined style={{ fontSize: '0.75rem', color: 'inherit' }} />}
-                                    {isLoss && <FallOutlined style={{ fontSize: '0.75rem', color: 'inherit' }} />}
-                                </>
-                            }
-                            label={`${percentage}%`}
-                            sx={{ ml: 1.25, pl: 1 }}
-                            size="small"
-                        />
-                    </Grid>
-                )}
+                {/* create a responsive image here */}
+                <Box>
+                    <img
+                        style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+                        src="https://images.unsplash.com/photo-1464820453369-31d2c0b651af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=260&q=80"
+                        alt="icon"
+                    />
+                </Box>
             </Grid>
         </Stack>
         <Box sx={{ pt: 2.25 }}>
+            <Typography variant="caption">{'All about color'}</Typography>
+        </Box>
+        <Box sx={{ pt: 2.25 }}>
             <Typography variant="caption" color="textSecondary">
-                You made an extra{' '}
-                <Typography component="span" variant="caption" sx={{ color: `${color || 'primary'}.main` }}>
-                    {extra}
-                </Typography>{' '}
-                this year
+                {'John Doe'}
             </Typography>
         </Box>
     </MainCard>
