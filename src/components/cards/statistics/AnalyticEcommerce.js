@@ -18,7 +18,7 @@ const AnalyticEcommerce = ({ color, title, count, percentage, isLoss, extra }) =
                 <Box>
                     <img
                         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
-                        src="https://images.unsplash.com/photo-1464820453369-31d2c0b651af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=260&q=80"
+                        src="https://images.unsplash.com/photo-1674763973434-75e1930d4959?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=274&q=80"
                         alt="icon"
                     />
                 </Box>
